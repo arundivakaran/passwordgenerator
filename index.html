@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- INSERT HTML HERE -->
+<div class="container">
+	<h2>Password Generator</h2>
+		<input class="result-container" type="text" placeholder="password">
+	<div class="settings">
+		<div class="setting">
+			<label class="lbl"></label>
+			<input type="range" id="volume" name="volume"
+         min="1" max="20">
+		</div>
+		<div class="setting">
+			<label>Include uppercase letters (A-Z)</label> 
+			<input class="option" type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include lowercase letters (a-z)</label> 
+			<input class="option" type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include numbers (0-9)</label> 
+			<input class="option" type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Include symbols (!@#$%^)</label> 
+			<input class="option" type="checkbox" id="symbols" checked />
+		</div>
+		<div class="setting">
+			<label>Exclude Duplicate</label> 
+			<input class="option" type="checkbox" id="duplicate" unchecked />
+		</div>
+		<div class="setting">
+			<label>Include Spaces</label> 
+			<input class="option" type="checkbox" id="space" unchecked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate password
+	</button>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
